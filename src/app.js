@@ -53,6 +53,19 @@ app.delete('/notes/:id', (req, res) => {
 
 
 
+app.post('/amd', (req, res) => {
+    console.log('Received a note');
+    res.status(201).json({ message: ' Message aya hai bhai' }); 
+    notes.push(req.body);
+});
+
+
+app.get('/amd', (req, res) => {
+    res.status(200).json({
+        message: 'Note retrieved successfully',
+        note: notes
+    });
+});
 
 
 
@@ -63,7 +76,7 @@ app.patch("/notes/:id", (req, res) => {
     notes[id].hel = hel;
 
     res.status(200).json({
-        message: "Sucessulfully Updated",
+        message: "Successfully Updated",
     });
 
 });
