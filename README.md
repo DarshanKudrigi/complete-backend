@@ -8,7 +8,7 @@ A multi-project workspace with several Node.js/Express services plus a React (Vi
 - authorize: Auth service (register) backed by MongoDB (Mongoose).
 - mongodb: Notes API backed by MongoDB (Mongoose).
 - project1/server: Posts API with ImageKit upload + MongoDB.
-- project1/client: React + Vite frontend.
+- project1/client: React + Vite frontend and TailwindCSS.
 
 ## Tech Stack
 
